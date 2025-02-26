@@ -9,3 +9,5 @@ for(let i = 0; i < names.length; i++){
     const thisName = names[i];
     console.log(thisName);   
 }
+
+names.forEach(name => console.log(name));
