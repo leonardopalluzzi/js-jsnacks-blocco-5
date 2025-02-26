@@ -21,3 +21,19 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+let studentClass;
+for(let i = 0; i < students.length; i++){
+  const thisEl = students[i];
+  if(thisEl.name.toLocaleLowerCase() == 'marco lanci'){
+    studentClass = thisEl.class;
+    break;
+  }
+}
+
+console.log(studentClass);
+
+
+const studentClassFind = students.find(student => student.name.toLocaleLowerCase() == 'marco lanci').class;
+
+console.log(studentClassFind);
